@@ -1,6 +1,6 @@
 export const config = {
   runtime: "edge",
-  regions: ["cle1"],
+  regions: ["iad1"],
 };
 
 export { default } from "./neon-global";

@@ -303,16 +303,16 @@ export default function Page() {
                 data={new Array(ATTEMPTS).fill(0).map((_, i) => {
                   return {
                     attempt: `#${i + 1}`,
-                    Regional: data.regional[i]
+                    "Edge function in Washington, D.C., USA": data.regional[i]
                       ? data.regional[i].queryDuration
                       : null,
-                    Global: data.global[i]
+                    "Global Edge function": data.global[i]
                       ? data.global[i].queryDuration
                       : null,
                   };
                 })}
                 index="attempt"
-                categories={['Global', 'Regional']}
+                categories={['Global Edge function', 'Edge function in Washington, D.C., USA']}
                 colors={['indigo', 'cyan']}
                 valueFormatter={dataFormatter}
                 yAxisWidth={48}
@@ -334,14 +334,14 @@ export default function Page() {
                 data={new Array(ATTEMPTS).fill(0).map((_, i) => {
                   return {
                     attempt: `#${i + 1}`,
-                    Regional: data.regional[i]
+                    "Edge function in Washington, D.C., USA": data.regional[i]
                       ? data.regional[i].elapsed
                       : null,
-                    Global: data.global[i] ? data.global[i].elapsed : null,
+                    "Global Edge function": data.global[i] ? data.global[i].elapsed : null,
                   };
                 })}
                 index="attempt"
-                categories={['Global', 'Regional']}
+                categories={['Global Edge function', 'Edge function in Washington, D.C., USA']}
                 colors={['indigo', 'cyan']}
                 valueFormatter={dataFormatter}
                 yAxisWidth={48}
